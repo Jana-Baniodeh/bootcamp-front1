@@ -35,24 +35,22 @@ a{
 .header{
     padding: 31.84px;
 }
-.collections{
-    display: flex;
-flex-wrap: wrap;
-column-gap: 30px;
+.menu{
+    display: none;
 }
-
-
-.collection{
-    width: 25%;
+@media screen and (min-width:320px) and (max-width:991px) {
+    .container {
+    width: calc(100% - 40px);
+}
     
+    .list{
+        display: none;
+    }
+    .hidden-icons{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
 }
-.collections img{
-    width: calc((100%-90)/4);
-}
-.collections h2{
-   
-    margin-top: 23px;
-    font-size:  18px;
-    font-weight:600;
-    text-align: center;
-}
+
